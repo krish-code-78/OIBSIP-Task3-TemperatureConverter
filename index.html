@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌡️ Temperature Converter</h1>
+
+        <div class="input-row">
+
+            <div class="box">
+                <label>Degrees</label>
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter Temperature">
+            </div>
+
+            <div class="box">
+                <label>Type</label>
+                <select id="unit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="result">
+            <h3>Result</h3>
+            <p id="result">--</p>
+        </div>
+
+        <button onclick="convertTemperature()">
+            Convert
+        </button>
+
+    </div>
+
+    <footer>
+        © 2026 Krish Raj | Oasis Infobyte Task 3
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
